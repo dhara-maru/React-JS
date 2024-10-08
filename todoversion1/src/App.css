@@ -1,10 +1,122 @@
-#root {
+body {
+  font-family: 'Montserrat', sans-serif; /* Changed font to Montserrat */
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px; /* Increased font size for the title */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap; /* Enables wrapping for responsive design */
+  margin-bottom: 10px;
+}
+
+.col-6, .col-4, .col-2 {
+  padding: 5px;
+  flex: 1; /* Makes columns responsive */
+}
+
+.col-6 {
+  flex: 2; /* Adjusts proportion for the first column */
+}
+.myinput {
+  background: white;
+  width: 195px;
+  height: 40px;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  box-shadow: 0px 0px 5px #bbbbbb;
+}
+.myinput2 {
+  background: white;
+  color: black;
+  width: 175px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 20px;
+  margin-right: 8px;
+  box-shadow: 0px 0px 5px #bbbbbb;
+}
+
+.todo-input button {
+  width: 100%;
+  padding: 15px; /* Increased padding for buttons */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px; /* Increased font size for buttons */
+}
+
+.btn-success {
+  background-color: #28a745;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.todo-list {
+  margin-top: 20px;
+}
+
+.todo-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.todo-item:hover {
+  background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  .col-6, .col-4, .col-2 {
+      flex: 100%; /* Stacks columns on small screens */
+  }
+  .col-6 {
+      flex: 100%; /* Full width for the input on small screens */
+  }
+}
+
+
+ #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
+/*
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -39,4 +151,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
